@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One&display=swap');
+body {
+    background: linear-gradient(45deg, rgb(245, 222, 179), rgb(255, 222, 173), rgb(204, 204, 255));
+    font-family: 'Yeseva One';
+}
+
+.tip {
+    font-size: 11px;
+}
+
+#title {
+    background-color: lightgoldenrodyellow;
+    border-radius: 50%;
+    height: 50px;
+    height: 50px;
+    width: 500px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    box-shadow: -30px 30px 34px -5px rgba(9, 41, 20, 0.84);
+    position: relative;
+}
+
+.h1 {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+#description {
+    text-transform: uppercase;
+}
+
+form {
+    background-color: rgba(132, 170, 209, 0.5);
+    width: 50%;
+    margin: auto;
+    position: relative;
+    border: 10px dotted;
+    border-color: #ffcc33;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.form-s {
+    margin: 0 auto 1rem auto;
+    padding: 0.2rem;
+}
+
+.form-t {
+    display: block;
+    padding: 10px;
+    width: 90%;
+    border: 2px solid;
+    border-color: beige;
+    border-radius: 0.25rem;
+}
+
+.form-t:hover {
+    color: blueviolet;
+}
+
+.input-radio,
+.input-checkbox {
+    display: inline-block;
+    height: 20px;
+    width: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+.input-textarea {
+    height: 120px;
+    width: 90%;
+    border: 3px solid;
+    border-radius: 0.25rem;
+    border-color: beige;
+}
+
+.submit-button {
+    display: block;
+    background-color: antiquewhite;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.submit-button:hover {
+    background-color: cadetblue;
+}
