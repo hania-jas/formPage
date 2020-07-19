@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    <div class="h1">
+        <h1 id="title">INSTRUMENT SURVEY FORM</h1>
+        <br>
+        <p id="description"><u>This is a survey of the most popular music instrument preferences</u></p>
+    </div>
+    <form id="survey-form">
+        <div class="form-s">
+            <label id="name-label" for="name">Name</label><br>
+            <input type="text" name="name" id="name" class="form-t" placeholder="Your name" required>
+        </div>
+        <br>
+        <br>
+        <div class="form-s">
+            <label id="email-label" for="email">Email</label>
+            <br>
+            <input type="email" id="email" name="email" class="form-t" placeholder="Your email adress" required>
+        </div>
+        <br>
+        <br>
+        <div class="form-s">
+            <label id="number-label" for="number">Age</label>
+            <br>
+            <input type="number" name="age" id="number" class="form-t" min="15" max="99" placeholder="Your age">
+        </div>
+        <br>
+        <div class="form-s">
+            <p>Do you play an instrument?</p>
+            <select id="dropdown" name="instrument" class="form-t" required>
+        <option disabled selected value>Select an answer</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="want">I want to start</option>
+      </select>
+        </div>
+        <div class="form-s">
+            <p>What kind of instrument do you play / would you like to play?</p>
+            <label>
+        <input name="choose-instr" value="piano" type="radio" class="input-radio">piano</label>
+            <br>
+
+
+            <label><input name="choose-instr" value="trumpet" type="radio" class="input-radio">trumpet</label>
+
+            <br>
+            <label>
+        <input name="choose-instr" value="cello" type="radio" class="input-radio">cello</label>
+            <br>
+            <label>
+        <input name="choose-instr" value="drums" type="radio" class="input-radio">drums</label>
+            <br>
+            <label>
+        <input name="choose-instr" value="violin" type="radio" class="input-radio">violin</label>
+        </div>
+        <div class="form-s">
+            <p>What are the most important features of the instrument for you? <span class="tip">(Check as many as you
+          want)</span></p>
+            <label>
+        <input name="personalfs" value="sound" type="checkbox" class="input-checkbox">sound</label>
+            <br>
+            <label><input name="personalfs" value="size" type="checkbox" class="input-checkbox">size</label>
+            <br>
+            <label><input name="personalfs" value="intonation" type="checkbox" class="input-checkbox">intonation</label>
+            <br>
+            <label><input name="personalfs" value="music-genre" type="checkbox" class="input-checkbox">music genre (jazz,
+        classical etc.)</label>
+            <br>
+            <label><input name="personalfs" value=playing-technique type="checkbox" class="input-checkbox">playing
+        technique</label>
+            <br>
+            <label><input name="personalfs" value="harmony" type="checkbox" class="input-checkbox">harmony</label>
+            <br>
+            <label><input name="personalfs" value="melody" type="checkbox" class="input-checkbox">melody</label>
+        </div>
+        <div class="form-s">
+            <p>Share with us what is so unique and inspiring about playing the instrument!</p>
+            <textarea id="thoughts" class="input-textarea" name="text" placeholder="Enter your thoughts here"></textarea>
+
+        </div>
+        <div class="form-s">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
