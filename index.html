@@ -10,26 +10,30 @@
 
 <body>
     <div class="h1">
-        <h1 id="title">INSTRUMENT SURVEY FORM</h1>
-        <br>
-        <p id="description"><u>This is a survey of the most popular music instrument preferences</u></p>
+        <h1 id="title">Instrument Survey Form</h1>
     </div>
     <form id="survey-form">
+        <div class="firstNumber">
+            <p class="number"> 1.</p>
+            <div class="greenCircle"></div>
+            <p class="generalInfo">Personal info
+            </p>
+        </div>
         <div class="form-s">
-            <label id="name-label" for="name">Name</label><br>
-            <input type="text" name="name" id="name" class="form-t" placeholder="Your name" required>
+            <label id="name-label" class="personalDetails" for="name">Name</label><br>
+            <input type="text" name="name" id="name" class="form-t" placeholder="Your name*" required>
         </div>
         <br>
         <br>
         <div class="form-s">
-            <label id="email-label" for="email">Email</label>
+            <label id="email-label" class="personalDetails" for="email">Email</label>
             <br>
-            <input type="email" id="email" name="email" class="form-t" placeholder="Your email adress" required>
+            <input type="email" id="email" name="email" class="form-t" placeholder="Your email adress*" required>
         </div>
         <br>
         <br>
         <div class="form-s">
-            <label id="number-label" for="number">Age</label>
+            <label id="number-label" class="personalDetails" for="number">Age</label>
             <br>
             <input type="number" name="age" id="number" class="form-t" min="15" max="99" placeholder="Your age">
         </div>
@@ -37,7 +41,7 @@
         <div class="form-s">
             <p>Do you play an instrument?</p>
             <select id="dropdown" name="instrument" class="form-t" required>
-        <option disabled selected value>Select an answer</option>
+        <option disabled selected value>Select an answer*</option>
         <option value="yes">Yes</option>
         <option value="no">No</option>
         <option value="want">I want to start</option>
@@ -46,7 +50,9 @@
         <div class="form-s">
             <p>What kind of instrument do you play / would you like to play?</p>
             <label>
-        <input name="choose-instr" value="piano" type="radio" class="input-radio">piano</label>
+        <input name="choose-instr" value="piano" type="radio" class="input-radio">piano
+        <span class="checkmark"></span>
+    </label>
             <br>
 
 
@@ -61,6 +67,12 @@
             <br>
             <label>
         <input name="choose-instr" value="violin" type="radio" class="input-radio">violin</label>
+        </div>
+        <div class="secondNumber">
+            <p class="number"> 2.</p>
+            <div class="greenCircle"></div>
+            <p class="generalInfo">Additional info
+            </p>
         </div>
         <div class="form-s">
             <p>What are the most important features of the instrument for you? <span class="tip">(Check as many as you
