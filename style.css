@@ -117,7 +117,7 @@ form {
 .submit-button {
     display: block;
     background-color: #57b99d;
-    width: 570px;
+    width: 100%;
     padding: 10px;
     font-weight: 400;
     cursor: pointer;
