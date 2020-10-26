@@ -50,7 +50,7 @@ body {
 }
 
 .form-s {
-    width: 100%;
+    width: 96%;
 }
 
 .form-t:hover {
@@ -107,34 +107,6 @@ body {
     background-color: #31685a;
 }
 
-@media (max-width: 620px) {
-    form {
-        background-color: #f4f7f8;
-        width: 97%;
-        position: relative;
-        border-radius: 25px;
-        padding: 4px;
-        border: 2px solid #8a8b8b;
-    }
-    .h1 {
-        width: 80%;
-        margin: auto;
-        text-align: center;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        font-size: 10px;
-    }
-    .form-t {
-        background-color: #e9eeee;
-        display: block;
-        padding: 10px;
-        width: 90%;
-        border: 2px solid;
-        border-color: #8a8b8b;
-        border-radius: 0.25rem;
-    }
-}
-
 @media (min-width: 801px) {
     form {
         background-color: #f4f7f8;
@@ -164,7 +136,7 @@ body {
     }
 }
 
-@media (min-width: 621px) and (max-width: 800px) {
+@media (max-width: 800px) {
     form {
         background-color: #f4f7f8;
         width: 97%;
@@ -191,5 +163,8 @@ body {
     }
     .form-s {
         padding-left: 30px;
+    }
+    .wrapText {
+        padding-right: 18px;
     }
 }
