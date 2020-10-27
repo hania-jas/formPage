@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <title>FORM</title>
     <link rel="stylesheet" href="style.css">
 
@@ -24,13 +27,12 @@
             <input type="text" name="name" id="name" class="form-t" placeholder="Your name*" required>
         </div>
         <br>
-        <br>
         <div class="form-s">
             <label id="email-label" class="personalDetails" for="email">Email</label>
             <br>
             <input type="email" id="email" name="email" class="form-t" placeholder="Your email adress*" required>
         </div>
-        <br>
+
         <br>
         <div class="form-s">
             <label id="number-label" class="personalDetails" for="number">Age</label>
@@ -39,20 +41,20 @@
         </div>
         <br>
         <div class="form-s">
-            <p>Do you play an instrument?</p>
+            <p class="questionCenter">Do you play an instrument?</p>
             <select id="dropdown" name="instrument" class="form-t" required>
-        <option disabled selected value>Select an answer*</option>
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-        <option value="want">I want to start</option>
-      </select>
+                <option disabled selected value>Select an answer*</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="want">I want to start</option>
+            </select>
         </div>
-        <div class="form-s">
-            <p>What kind of instrument do you play / would you like to play?</p>
+        <div class="form-s wrapText">
+            <p class="wrapText">What kind of instrument do you play / would you like to play?</p>
             <label>
-        <input name="choose-instr" value="piano" type="radio" class="input-radio">piano
-        <span class="checkmark"></span>
-    </label>
+                <input name="choose-instr" value="piano" type="radio" class="input-radio">piano
+                <span class="checkmark"></span>
+            </label>
             <br>
 
 
@@ -60,13 +62,13 @@
 
             <br>
             <label>
-        <input name="choose-instr" value="cello" type="radio" class="input-radio">cello</label>
+                <input name="choose-instr" value="cello" type="radio" class="input-radio">cello</label>
             <br>
             <label>
-        <input name="choose-instr" value="drums" type="radio" class="input-radio">drums</label>
+                <input name="choose-instr" value="drums" type="radio" class="input-radio">drums</label>
             <br>
             <label>
-        <input name="choose-instr" value="violin" type="radio" class="input-radio">violin</label>
+                <input name="choose-instr" value="violin" type="radio" class="input-radio">violin</label>
         </div>
         <div class="secondNumber">
             <p class="number"> 2.</p>
@@ -75,31 +77,33 @@
             </p>
         </div>
         <div class="form-s">
-            <p>What are the most important features of the instrument for you? <span class="tip">(Check as many as you
-          want)</span></p>
+            <p class="wrapText">What are the most important features of the instrument for you? <span class="tip">(Check
+                    as many as you
+                    want)</span></p>
             <label>
-        <input name="personalfs" value="sound" type="checkbox" class="input-checkbox">sound</label>
+                <input name="personalfs" value="sound" type="checkbox" class="input-checkbox">sound</label>
             <br>
             <label><input name="personalfs" value="size" type="checkbox" class="input-checkbox">size</label>
             <br>
             <label><input name="personalfs" value="intonation" type="checkbox" class="input-checkbox">intonation</label>
             <br>
-            <label><input name="personalfs" value="music-genre" type="checkbox" class="input-checkbox">music genre (jazz,
-        classical etc.)</label>
+            <label><input name="personalfs" value="music-genre" type="checkbox" class="input-checkbox">music genre
+                (jazz,
+                classical etc.)</label>
             <br>
             <label><input name="personalfs" value=playing-technique type="checkbox" class="input-checkbox">playing
-        technique</label>
+                technique</label>
             <br>
             <label><input name="personalfs" value="harmony" type="checkbox" class="input-checkbox">harmony</label>
             <br>
             <label><input name="personalfs" value="melody" type="checkbox" class="input-checkbox">melody</label>
         </div>
-        <div class="form-s">
-            <p>Share with us what is so unique and inspiring about playing the instrument!</p>
+        <div>
+            <p class="textAreaParagraph">Share with us what is so unique and inspiring about playing the instrument!</p>
             <textarea id="thoughts" class="input-textarea" name="text" placeholder="Enter your thoughts here"></textarea>
 
         </div>
-        <div class="form-s">
+        <div>
             <button type="submit" id="submit" class="submit-button">Submit</button>
         </div>
 
